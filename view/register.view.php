@@ -57,4 +57,4 @@
                     </div>
                 </main>
             </div>
-            <?php include("view/layout/footer.inc.php"); ?>
+<?php include("view/layout/footer.inc.php"); ?>

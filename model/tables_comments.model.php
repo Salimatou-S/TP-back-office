@@ -4,8 +4,10 @@ include ("model/pdo.inc.php");
 
 try{
     $query="
-    SELECT * 
-    FROM blog_comments 
+    SELECT display_name,post_title,comment_content 
+    FROM blog_posts 
+    INNER JOIN blog_users ON post_author = ID 
+    INNER JOIN blog_comments ON comment_post_ID = post_ID;
 ";
 
     /* try permet de recuperer les données dans la base dans une variable query. On selectionne les id des articles, leur date  de parution, les titres le nom des auteurs, la catégories et url des images ainsi que leur contenu en faisant appel aux tables blog_users et categories par ordre chronologique (du plus recent au plus ancien )

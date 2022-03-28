@@ -6,5 +6,5 @@ define("DB_USER", "root");
 define("DB_PASSWORD", "");
 define("DB_CHARSET", "utf8");
 
-define("TRONCATURE",35);
+define("TRONCATURE",50);
 

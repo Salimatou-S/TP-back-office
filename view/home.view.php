@@ -1,7 +1,7 @@
-<?php include("view/layout/meta.inc.php"); ?>
-<?php include("view/layout/nav.inc.php"); ?>
+            <?php include("view/layout/meta.inc.php"); ?>
+            <?php include("view/layout/nav.inc.php"); ?>
 
-<div id="layoutSidenav_content">
+            <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>

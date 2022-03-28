@@ -1,3 +1,3 @@
 <?php 
-include("./model/layout-sidenav-light.model.php"); 
-include("./view/layout-sidenav-light.view.php"); 
+include("./model/layout-static.model.php"); 
+include("./view/layout-static.view.php"); 

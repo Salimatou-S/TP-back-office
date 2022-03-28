@@ -4,8 +4,13 @@ include ("model/pdo.inc.php");
 
 try{
     $query="
-    SELECT post_ID, post_author, post_category, post_date, LEFT(post_content," . TRONCATURE .") AS post_content,post_title,post_img_url  
-    FROM blog_posts
+    SELECT display_name, cat_descr, LEFT(post_content, " . TRONCATURE . ") AS post_content 
+        FROM blog_posts
+        JOIN blog_users
+        ON ID = post_author
+        JOIN blog_categories
+        ON cat_id = post_category
+    
 ";
 
     /* try permet de recuperer les données dans la base dans une variable query. On selectionne les id des articles, leur date  de parution, les titres le nom des auteurs, la catégories et url des images ainsi que leur contenu en faisant appel aux tables blog_users et categories par ordre chronologique (du plus recent au plus ancien )
