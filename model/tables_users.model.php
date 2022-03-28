@@ -32,4 +32,4 @@ try{
 
 
 
-$title="Tableau des utilisateurs ";
+$title="Tableau des utilisateurs";

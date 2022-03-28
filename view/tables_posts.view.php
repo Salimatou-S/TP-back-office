@@ -19,7 +19,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                DataTable Example
+                                <?=$title ?>
                             </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
@@ -41,7 +41,7 @@
                                             <td><?=$onedata['post_author']; ?></td>
                                             <td><?=$onedata['post_category']; ?></td>
                                             <td><?=$onedata['post_date']; ?></td>
-                                            <td><?=$onedata['post_content']; ?> [...]</td>
+                                            <td><?=$onedata['post_content']; ?>...</td>
                                             <td><?=$onedata['post_img_url']; ?></td>
                                         <?php } ?>
                                     </tbody>
